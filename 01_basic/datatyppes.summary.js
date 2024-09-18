@@ -50,3 +50,33 @@ const myfunction=function(){
     console.log("hello");
     
 }
+
+
+// ##########################################################################
+
+// stack(Primitive) and heap memory(Non -Primitive)
+/*
+stack -copy of the value
+heap - reference of the value
+
+*/
+
+// stack  stored
+let myYoutubename ="Ansh Gamer"
+let anothernam= myYoutubename
+
+anothernam="coding"
+console.log(anothernam);
+console.log(myYoutubename);
+
+// Heap stored 
+
+let userOne={
+    email :"abs@gmaik.com",
+    upi:"9089@ybl"
+}
+let userTwo=userOne
+userTwo.email="bhhh@gmail.com";
+console.log(userOne.email);
+console.log(userTwo.email);
+
